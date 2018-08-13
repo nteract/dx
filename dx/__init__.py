@@ -5,6 +5,16 @@ del get_versions
 from .datasets import load_sample
 import pandas as pd
 
-def dx(dataframe):
+def dx(dataframe, sampled=None):
+    # All the metadata keys that we'll apply for just the data explorer media type, application/vnd.dataresource+json
+    scoped_metadata = {}
+
+    if sampled:
+        scoped_metadata["sampled"] = sampled
+
+    metadata = {
+        "application/vnd.dataresource+json": scoped_metadata
+    }
+
     with pd.option_context('display.html.table_schema', True):
-        display(dataframe)
+        display(dataframe, metadata=metadata)
