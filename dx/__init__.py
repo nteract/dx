@@ -18,3 +18,9 @@ def dx(dataframe, sampled=None):
 
     with pd.option_context('display.html.table_schema', True):
         display(dataframe, metadata=metadata)
+
+def enable():
+    pd.options.display.html.table_schema = True
+
+def disable():
+    pd.options.display.html.table_schema = False
