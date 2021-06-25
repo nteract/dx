@@ -7,7 +7,7 @@ from os.path import exists
 from setuptools import setup
 import versioneer
 
-install_requires = [pandas]
+install_requires = []
 
 extras_require = {"tests": ["pytest"]}
 

@@ -19,9 +19,8 @@ def dx(dataframe, sampled=None):
 
     metadata = {"application/vnd.dataresource+json": scoped_metadata}
 
-    pd.set_option("display.html.table_schema", True)
-    with pd.option_context():
-        pd.options.display(dataframe, metadata=metadata)
+    with pd.option_context('display.html.table_schema', True):
+        display(dataframe, metadata=metadata)
 
 
 def enable():
