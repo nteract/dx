@@ -40,7 +40,7 @@ from dx import dx
 
 
 # Get happiness data and create a pandas dataframe
-df = pd.DataFrame("https://github.com/nteract/dx/blob/main/examples/2019.csv")
+df = pd.read_csv('examples/data/2019.csv')
 
 # Open data explorer with the happiness dataframe
 dx(df)
