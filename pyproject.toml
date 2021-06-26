@@ -1,0 +1,30 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "dx"
+author = "nteract"
+author-email = "carolcode@willingconsulting.com"
+home-page = "https://github.com/nteract/dx"
+description-file = "README.md"
+requires = [
+    "jsonschema",
+    "pandas"
+]
+classifiers = "Private :: Do Not Upload",
+dist-name = "dx"
+
+[tool.flit.metadata.requires-extra]
+dev = [
+    "black",
+    "flit",
+    "isort,
+    "pytest",
+    "tox"
+]
+test = [
+    "pytest >=2.7.3",
+    "pytest-cov",
+]
+doc = ["sphinx"]

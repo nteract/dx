@@ -1,7 +1,7 @@
-from ._version import get_versions
+"""A Pythonic Data Explorer"""
 
-__version__ = get_versions()["version"]
-del get_versions
+__version__ = '0.3.0.dev0'
+
 
 import pandas as pd
 
