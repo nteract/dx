@@ -70,3 +70,4 @@ We follow the nteract.io code of conduct.
 
 ## LICENSE
 
+See [LICENSE.md](LICENSE.md).

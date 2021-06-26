@@ -1,4 +1,5 @@
 black
+flit
 isort
 pytest
 tox
