@@ -24,10 +24,10 @@ from dx import dx
 dx(dataframe)
 ```
 
-The `dx(dataframe) function will display the dataframe in [data explorer](https://github.com/nteract/dataexplorer) mode:
+The `dx(dataframe)` function will display the dataframe in
+[data explorer](https://github.com/nteract/data-explorer) mode:
 
 ![dx in action](https://user-images.githubusercontent.com/836375/44104304-651a2560-9fa3-11e8-9852-76db43270188.png)
-
 
 Today, a Pandas `DataFrame` may be passed. In the future, other dataframe types
 may be supported.
@@ -50,8 +50,11 @@ dx(df)
 
 Q: What about Spark?
 
-A: Spark support would be highly welcome! See [improved-spark-viz](https://github.com/nteract/improved-spark-viz) for the current effort. There's a format
-that pandas handles for us that we could create in spark land. 
+A: Spark support would be highly welcome!
+
+See [improved-spark-viz](https://github.com/nteract/improved-spark-viz) for
+the current effort. There's a format that pandas handles for us that we could
+create in spark land.
 
 ## Develop
 
@@ -60,3 +63,10 @@ git clone https://github.com/nteract/dx
 cd dx
 pip install -e .
 ```
+
+## Code of Conduct
+
+We follow the nteract.io code of conduct.
+
+## LICENSE
+
