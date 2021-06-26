@@ -17,6 +17,10 @@ classifiers = [
     "Programming Language :: Python :: 3.9"
 ]
 dist-name = "dx"
+include = [
+    "LICENSE"
+]
+
 
 [tool.flit.metadata.requires-extra]
 dev = [
@@ -47,3 +51,7 @@ extend-exclude = '''
 [tool.isort]
 profile = "black"
 multi_line_output = 3
+
+# tox.ini
+[tox]
+isolated_build = True
