@@ -1,6 +1,6 @@
 """A Pythonic Data Explorer"""
 
-__version__ = '0.3.0.dev'
+__version__ = '0.3.0.dev0'
 
 
 import pandas as pd
