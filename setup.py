@@ -5,7 +5,6 @@
 
 from os.path import exists
 from setuptools import setup
-import versioneer
 
 install_requires = []
 
@@ -15,11 +14,11 @@ extras_require["all"] = list(set([val for k, v in extras_require.items() for val
 
 setup(
     name="dx",
-    version=versioneer.get_version(),
-    cmdclass=versioneer.get_cmdclass(),
+    version=None,
+    cmdclass=None,
     description="data explorer",
     author="nteract contributors",
-    author_email="jupyter@googlegroups.com",
+    author_email="carolcode@willingconsulting.com",
     license="BSD",
     keywords="data, exploration",
     long_description=(open("README.md").read() if exists("README.md") else ""),
