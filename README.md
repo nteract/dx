@@ -1,6 +1,10 @@
-# Data Explorer
+# dx
+
+A Pythonic Data Explorer.
 
 ## Install
+
+For Python 3.8+:
 
 ```
 pip install dx
@@ -8,22 +12,39 @@ pip install dx
 
 ## Usage
 
-`dx` contains a simple helper called `dx`
+The `dx` library contains a simple helper function also called `dx`.
 
 ```python
 from dx import dx
 ```
 
-It takes one positional argument for a Pandas `DataFrame`:
+`dx()` takes one positional argument, a `dataframe`.
 
 ```python
 dx(dataframe)
 ```
 
-Which will display the dataframe in data explorer mode:
+The `dx(dataframe) function will display the dataframe in [data explorer](https://github.com/nteract/dataexplorer) mode:
 
 ![dx in action](https://user-images.githubusercontent.com/836375/44104304-651a2560-9fa3-11e8-9852-76db43270188.png)
 
+
+Today, a Pandas `DataFrame` may be passed. In the future, other dataframe types
+may be supported.
+
+### Example
+
+```python
+import pandas as pd
+from dx import dx
+
+
+# Get happiness data and create a pandas dataframe
+df = pd.DataFrame("https://github.com/nteract/dx/blob/main/examples/2019.csv")
+
+# Open data explorer with the happiness dataframe
+dx(df)
+```
 
 ## FAQ
 
@@ -31,7 +52,6 @@ Q: What about Spark?
 
 A: Spark support would be highly welcome! See [improved-spark-viz](https://github.com/nteract/improved-spark-viz) for the current effort. There's a format
 that pandas handles for us that we could create in spark land. 
-
 
 ## Develop
 
