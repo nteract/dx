@@ -12,14 +12,18 @@ requires = [
     "jsonschema",
     "pandas"
 ]
-classifiers = "Private :: Do Not Upload",
+classifiers = [
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9"
+]
 dist-name = "dx"
 
 [tool.flit.metadata.requires-extra]
 dev = [
     "black",
     "flit",
-    "isort,
+    "isort",
+    "pre-commit",
     "pytest",
     "tox"
 ]
@@ -28,3 +32,18 @@ test = [
     "pytest-cov",
 ]
 doc = ["sphinx"]
+
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+extend-exclude = '''
+# A regex preceded with ^/ will apply only to files and directories
+# in the root of the project.
+^/foo.py  # exclude a file named foo.py in the root of the project (in addition to the defaults)
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
