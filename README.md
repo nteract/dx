@@ -48,6 +48,15 @@ df = pd.read_csv('examples/data/2019.csv')
 dx(df)
 ```
 
+If you only wish to display a certain number of rows from the dataframe, use
+a context and specify the max rows (if set to None, all rows are used):
+
+```python
+# To use the first 13 rows for visualization with dx
+with pd.option_context('display.max_rows', 13):
+  dx(df)
+```
+
 ## FAQ
 
 Q: What about Spark?
