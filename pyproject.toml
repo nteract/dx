@@ -10,6 +10,8 @@ home-page = "https://github.com/nteract/dx"
 description-file = "README.md"
 requires = [
     "jsonschema",
+    "jupyter",
+    "nteract_on_jupyter",
     "pandas"
 ]
 classifiers = [
