@@ -1,0 +1,71 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://nteract.io/dataexplorer.schema.json",
+    "definitions": {
+        "chart": {
+          "type": "object",
+          "properties": {
+            "metric1": "string",
+            "metric2": "string",
+            "metric3": "string",
+            "metric4": "string",
+            "dim1": "string",
+            "dim2": "string",
+            "dim3": "string",
+            "networkLabel": "string",
+            "timeseriesSort": "string",
+            "lineType": "string",
+            "areaType": "string",
+            "selectedDimensions": "array",
+            "selectedMetrics": "array",
+            "pieceType": "string",
+            "summaryType": "string",
+            "networkType": "string",
+            "hierarchyType": "string",
+            "primaryKey": "array"
+          }
+        },
+        "filters": {
+          "type": "object",
+          "properties": {
+            "DIMENSION_FILTERS": "object",
+            "METRIC_FILTERS": "object",
+            "DATE_FILTERS": "object"
+          }
+        },
+        "decorations": {
+          "type": "object",
+          "properties": {
+            "title": "string",
+            "subtitle": "string",
+            "footer": "string"
+          }
+        },
+        "dx": {
+          "type": "object",
+          "properties": {
+            "visibility": {
+              "properties": {
+                "type": { "enum": ["public", "private"] }
+              }
+            },
+            "key": "string",
+            "chart": "#/definitions/chart",
+            "filters": "#/definitions/filters",
+            "decorations": "#/definitions/decorations"
+          }
+        },
+        "views": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/dx" },
+          "default": []
+        },
+        "styles": {
+          "type": "object",
+          "properties": {
+            "colors": "array"
+          }
+        },
+        "additionalProperties": false
+    } 
+}
