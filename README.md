@@ -1,5 +1,7 @@
 # dx
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nteract/dx/main?urlpath=nteract/tree/examples])
+
 A Pythonic Data Explorer.
 
 ## Install
