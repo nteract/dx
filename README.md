@@ -64,6 +64,17 @@ cd dx
 pip install -e .
 ```
 
+We currently install jupyter and jupyter_on_nteract packages for ease of running
+examples.
+
+To run nteract on jupyter:
+
+```
+jupyter nteract
+```
+
+
+
 ## Code of Conduct
 
 We follow the nteract.io code of conduct.

@@ -1,2 +1,4 @@
 jsonschema
+jupyter
+nteract_on_jupyter
 pandas
