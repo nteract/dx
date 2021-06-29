@@ -1,4 +1,8 @@
+dataclasses-json
+datamodel-code-generator
 jsonschema
 jupyter
+marshmallow
 nteract_on_jupyter
 pandas
+pydantic

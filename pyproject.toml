@@ -9,10 +9,14 @@ author-email = "carolcode@willingconsulting.com"
 home-page = "https://github.com/nteract/dx"
 description-file = "README.md"
 requires = [
+    "datamodel-code-generator",
+    "dataclasses-json",
     "jsonschema",
     "jupyter",
+    "marshmallow",
     "nteract_on_jupyter",
-    "pandas"
+    "pandas",
+    "pydantic"
 ]
 classifiers = [
     "Programming Language :: Python :: 3.8",
