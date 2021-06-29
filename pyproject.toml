@@ -16,7 +16,7 @@ requires = [
     "marshmallow",
     "nteract_on_jupyter",
     "pandas",
-    "pydantic
+    "pydantic"
 ]
 classifiers = [
     "Programming Language :: Python :: 3.8",
