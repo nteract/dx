@@ -14,9 +14,9 @@ when trying to convert to a Python model
 
 ## Convert JSON Schema to Python model
 
-Use **datamodel-code-generator** to convert JSON, JSON Schema or OpenAPI to
+- Check for valid JSON Schema doc before generating Python code
+- Use **datamodel-code-generator** to convert JSON, JSON Schema or OpenAPI to
 Python model.
-
 ## Store the Python model for programmatic use
 
 ## Workflow
